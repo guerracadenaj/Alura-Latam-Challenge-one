@@ -15,6 +15,33 @@
             <img src="images/logo-alura.png" alt="Logo Alura-Latam">
         </h1>
     </header>
-    
+    <main>
+        <form class="contenedor__izquierdo">
+            <textarea class="input__texto" cols="30" rows="3" placeholder="Ingrese el texto aqui" onkeypress="return validacion(event)" required></textarea>
+            <fieldset class="regla">
+                <img src="images/icono-exclamacion.png" alt="Simbolo de icono-exclamacion">
+                <p class="texto__regla">Solo letras minusculas. No se aceptan acentos, caracteres especiales y numeros</p>
+            </fieldset>
+            <fieldset class="botones">
+                <input class="btn__encriptar" type="button" type="submit" value="Encriptar" onclick="resultadoEncriptar()">
+                <input class="btn__desencriptar" type="button" type="submit" value="Encriptar" onclick="resultadoDesencriptar()">
+            </fieldset>
+        </form>
+
+        <div class="contenedor__derecho">
+            <div class="instruccion">
+                <img src="images/hombreLupa.png" alt="Imagen de personaje cherlos buscando con lupa">
+                <div class="textos">
+                    <h2>Ningun mensaje fue encontrado</h2>
+                    <p>Ingresa el texto que desees encriptar o desencriptar</p>
+                </div>
+            </div>
+            <form class="mensaje">
+                <textarea class="output__texto" cols="20" rows="8" readonly></textarea>
+                <input class="btn__copiar" type="button" value="copiar" onclick="copiar()">
+            </form>
+        </div>
+    </main>
+    <script src="js/encriptador.js"></script>
 </body>
 </html>
