@@ -17,14 +17,14 @@
     </header>
     <main>
         <form class="contenedor__izquierdo">
-            <textarea class="input__texto" cols="30" rows="3" placeholder="Ingrese el texto aqui" onkeypress="return validacion(event)" required></textarea>
+            <textarea class="input__texto" cols="20" rows="3" placeholder="Ingrese el texto aqui" onkeypress="return validacion(event)" required></textarea>
             <fieldset class="regla">
                 <img src="images/icono-exclamacion.png" alt="Simbolo de icono-exclamacion">
                 <p class="texto__regla">Solo letras minusculas. No se aceptan acentos, caracteres especiales y numeros</p>
             </fieldset>
             <fieldset class="botones">
                 <input class="btn__encriptar" type="button" type="submit" value="Encriptar" onclick="resultadoEncriptar()">
-                <input class="btn__desencriptar" type="button" type="submit" value="Encriptar" onclick="resultadoDesencriptar()">
+                <input class="btn__desencriptar" type="button" type="submit" value="Desencriptar" onclick="resultadoDesencriptar()">
             </fieldset>
         </form>
 
@@ -37,7 +37,7 @@
                 </div>
             </div>
             <form class="mensaje">
-                <textarea class="output__texto" cols="20" rows="8" readonly></textarea>
+                <textarea class="output__texto" cols="15" rows="8" readonly></textarea>
                 <input class="btn__copiar" type="button" value="copiar" onclick="copiar()">
             </form>
         </div>
